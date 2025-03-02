@@ -1,0 +1,111 @@
+/* Basic Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;  /* Allow wrapping on small screens */
+    margin-bottom: 20px;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 1.8em;
+  }
+  
+  /* Table Styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  /* Highlight Classes */
+  .final-assessment-end {
+    background-color: #d4edda; /* light green */
+  }
+  
+  .teaching-start {
+    background-color: #f8d7da; /* light red */
+  }
+  
+  .mid-semester-break {
+    background-color: #fff3cd; /* light yellow */
+  }
+  
+  /* Key (Legend) Styling - within the header */
+  #legend {
+    font-size: 0.75em;
+  }
+  
+  #legend ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  #legend li {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .legend-box {
+    display: inline-block;
+    width: 0.7em;
+    height: 0.7em;
+    margin-right: 4px;
+  }
+  
+  /* Legend Colors */
+  .teaching-start-indicator {
+    background-color: #f8d7da;
+  }
+  
+  .mid-semester-break-indicator {
+    background-color: #fff3cd;
+  }
+  
+  .final-assessment-end-indicator {
+    background-color: #d4edda;
+  }
+  
+  /* Responsive Adjustments */
+  @media screen and (max-width: 600px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .header h1 {
+      font-size: 1.6em;
+    }
+  
+    #legend {
+      margin-top: 10px;
+    }
+  
+    table {
+      font-size: 0.85em;
+    }
+  }
+  
